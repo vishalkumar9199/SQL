@@ -46,50 +46,7 @@ select 5 * 2;
 
 SELECT LENGTH('hello');
 
-SELECT 5 < 3;
-@dss1997
-dss1997
-commented
-on Jun 18, 2025
-thank you vipul bhai
 
-@avinash-mundolli
-avinash-mundolli
-commented
-on Oct 2, 2025
-thanks bro
-
-@iamYogeshkumar
-iamYogeshkumar
-commented
-on Nov 13, 2025
-Thank bhaiya.
-
-@Khushhal-soni
-Khushhal-soni
-commented
-on Dec 25, 2025
-Thank you for creating such videos for us, your words are to the point bhai!!!
-
-@Abhaysingh00001
-Abhaysingh00001
-commented
-on Jun 25
-Great sir!
-
-@vishalkumar9199
-Comment
- 
-
-Leave a comment
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
 Docs
 Contact
 Manage cookies
