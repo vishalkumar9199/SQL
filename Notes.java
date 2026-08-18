@@ -108,6 +108,92 @@ Main commands:
 COMMIT
 ROLLBACK
 SAVEPOINT
+
+  -----------------------------SQL STATEMENT STRUCTURE----------------------------------------
+  1. SQL Keyword
+=>A keyword is a reserved word in SQL that has a predefined meaning.
+
+  2. SQL Clause
+=>A clause is a part of an SQL statement that performs a specific operation.
+  
+  3. SQL Statement
+=>An SQL statement is a complete instruction given to the database.
+
+  4. SQL Terminator
+=>An SQL statement terminator is used to indicate the end of an SQL statement.
+
+  --------------------------------indentifiers----------------
+  =>SQL identifiers are names given to database objects so that they can be uniquely identified and referenced in SQL statements.
+  .TYPES
+-Table Identifier
+    Identifies a table.
+
+-Column Identifier
+  Identifies a column.
+
+-Database Identifier
+ Identifies a database.
+
+  -----------------------------------------SQL Literals----------------------
+  def=>SQL literals are constant values that are explicitly written in an SQL statement and are not treated as database object names.
+  
+  =>Types of SQL Literals
+Boolean values
+Integer literals
+Date-time literals
+Hexadecimal literals
+Decimal literals
+NULL literal
+Floating-point literals
+Numeric literals
+Binary literals
+String literals
+Date literals
+Time literals
+
+  ----------------------------------------------------------Databases and Schemas------------------------------
+- 3.1 Database Commands
+    - SHOW DATABASES
+    - CREATE DATABASE
+    - CREATE DATABASE IF NOT EXISTS
+    - USE
+    - SELECT DATABASE()
+    - ALTER DATABASE
+    - DROP DATABASE
+    - DROP DATABASE IF EXISTS
+  
+- 3.2 Table commands
+    - CREATE TABLE
+    - ALTER TABLE
+    - RENAME
+    - TRUNCATE
+    - DROP
+  
+- 3.3 Database Properties
+    - Default character set
+    - Default collation
+    - Database existence
+  
+- 3.4 Inspecting Database Objects
+    - SHOW TABLES
+    - SHOW FULL TABLES
+    - DESCRIBE
+    - DESC
+    - SHOW COLUMNS
+    - SHOW FULL COLUMNS
+    - SHOW CREATE DATABASE
+    - SHOW CREATE TABLE
+  
+- 3.5 Modifying table structure
+    - Add column
+    - Modify column
+    - Rename column
+    - Drop column
+    - Reorder column
+  
+  
+
+  
   
   
   
