@@ -355,4 +355,92 @@ Do not allow the parent row to be deleted or updated if related child rows exist
 NO ACTION means:
 
 Do not automatically modify the child rows; reject the operation if it would violate the foreign-key relationship.
+
+
+  ------------------------------------------------------Operators and Expressions----------------------------------------------
+  Operators and Expressions
+- 10.1 Arithmetic Operators
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+    - Integer division
+    - Modulo
+- 10.2 Comparison Operators
+    - Equal
+    - Not equal
+    - Greater than
+    - Less than
+    - Greater than or equal
+    - Less than or equal
+    - NULL-safe equality
+- 10.3 Logical Operators
+    - AND
+    - OR
+    - NOT
+    - XOR
+    - Operator precedence
+    - Parentheses
+- 10.4 Range and List Operators
+    - BETWEEN
+    - NOT BETWEEN
+    - IN
+    - NOT IN
+- 10.5 Pattern matching
+    - LIKE
+    - NOT LIKE 
+    - EXIST
+    - NOT EXIST
+    - % wildcard
+    - _ wildcard
+    - Regular Expression
+- 10.7 NULL Operators
+    - IS NULL
+    - IS NOT NULL
+    - IS TRUE
+    - IS FALSE
+- 10.8 Bitwise Operators
+    - Bitwise AND
+    - Bitwise OR
+    - Bitwise XOR
+    - Bit shifting
+- 10.9 Assignment Operators
+    - =
+    - :=
+- Conditional Expressions  
+    - CASE expression
+    - Conditional functions
+        - IF()
+        - IFNULL()
+        - NULLIF()
+        - COALESCE()
+- Types of filtering
+    - Numeric
+    - STRING
+    - DATE
+    - Boolean
+    - NULL
+
+  -------------------------------------------------------- Aggregate Functions --------------------------------------------------------------------
+- Aggregate Functions
+    - COUNT
+    - SUM
+    - AVG
+    - MIN
+    - MAX
+    - GROUP_CONCAT
+- Aggregate variations
+    - COUNT(*)
+    - COUNT(column)
+    - COUNT(DISTINCT column)
+- 
+  -------------------------------------------------------JOINS------------------------------------------------------
+  SQL Joins
+    - INNER JOIN
+    - LEFT JOIN
+    - RIGHT JOIN
+    - CROSS JOIN
+    - SELF JOIN
+    - ON
+    - USING
   
