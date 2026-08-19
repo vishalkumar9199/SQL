@@ -190,11 +190,169 @@ Time literals
     - Rename column
     - Drop column
     - Reorder column
-  
-  
 
+  ----------------------------------------------------------------SQL DATA TYPE-----------------------------------
+  SQL Data Types
   
+- 4.1 Integer Data Types
+    - TINYINT
+    - SMALLINT
+    - MEDIUMINT
+    - INT
+    - INTEGER
+    - BIGINT
+    - Signed  & Unsigned integers
   
+- 4.2 Decimal and floating-point types
+    - DECIMAL
+    - NUMERIC
+    - Float
+    - Double
+    - Precision and Scale
   
+- 4.3 Character Data Types
+    - CHAR
+    - VARCHAR
+    - TEXT
   
+- 4.4 Binary Data Types
+    - BINARY
+    - VARBINARY
+    - BLOB
+  
+- 4.5 Bit and Boolean Types
+    - BIT
+    - BOOLEAN
+    - BOOL
+    - True and false values
+  
+- 4.6 Date and Time Data Types
+    - DATE
+    - TIME
+    - DATETIME
+    - TIMESTAMP
+    - YEAR
+  
+- 4.7 Special String Types
+    - ENUM
+    - SET
+    - JSON
+    - Spatial data types
+  
+- 4.8 Character Sets and Collations
+    - Character set
+    - Collation
+    - utf8mb4
+  
+- 4.9 Data-Type Conversion
+    - Implicit conversion
+    - Explicit conversion
+    - CAST
+    - CONVERT
+  
+---------------------------------------KEY AND CONSTRAINT---------------------------------------------------------------
+  1. Super Key
+
+A super key is any column or combination of columns that can uniquely identify a row.
+
+Examples
+  
+student_id
+email
+student_id + name
+student_id + email
+
+  2. Candidate Key
+
+A candidate key is a minimal super key.
+That means it uniquely identifies a row and doesn't contain unnecessary columns.
+
+  3. Primary Key
+
+The primary key is the candidate key selected to uniquely identify each row.
+=>Properties
+A primary key:
+
+Must be unique
+Cannot contain NULL
+There is normally one primary-key constraint per table
+Can consist of multiple columns (composite primary key)
+
+  4. Alternate Key
+
+An alternate key is a candidate key that was not selected as the primary key
+
+  5. Foreign Key
+
+A foreign key is a column or set of columns that references a key in another table, usually the primary key.
+It helps maintain referential integrity between related tables.
+
+  6. Composite Key
+
+A composite key is a key made using two or more columns together.
+
+  7. Unique Key
+
+A unique key is a constraint used to ensure that values in a column or combination of columns are not duplicated.
+  
+  8. Natural Key
+
+A natural key is a key based on real-world/business data that already exists.
+
+ 9. Surrogate Key
+
+A surrogate key is an artificial/generated key created specifically to identify records.
+
+
+  --------------------------------------------SQL CONSTRAINT=------------------------------------------------
+  1. UNIQUE Constraint
+
+The UNIQUE constraint ensures that duplicate values are not allowed in a column.
+
+  2. NOT NULL Constraint
+
+NOT NULL ensures that a column cannot contain a NULL value.
+  
+  3. DEFAULT Constraint
+
+DEFAULT automatically provides a predefined value when no value is supplied for a column.
+
+  4. CHECK Constraint
+
+CHECK ensures that a value satisfies a specified condition.
+
+  ---------------------------------------------------------------Referential Actions in SQL-----------------------------------------------------------
+  Referential actions define what should happen to related rows in a child table when a referenced row in the parent table is deleted or updated.
+
+  1. ON DELETE
+
+ON DELETE specifies what happens to child records when the referenced parent record is deleted.
+
+  2. ON UPDATE
+
+ON UPDATE specifies what happens to child records when the referenced key in the parent table is updated.
+
+  3. CASCADE
+
+CASCADE means:
+
+CASCADE automatically propagates DELETE or UPDATE operations from the parent table to related child rows.
+  
+  4. SET NULL
+
+SET NULL means:
+
+When the parent row is deleted or its referenced key is updated, set the corresponding foreign-key value in the child table to NULL.
+
+  5. RESTRICT
+
+RESTRICT means:
+
+Do not allow the parent row to be deleted or updated if related child rows exist.
+
+  6. NO ACTION
+
+NO ACTION means:
+
+Do not automatically modify the child rows; reject the operation if it would violate the foreign-key relationship.
   
