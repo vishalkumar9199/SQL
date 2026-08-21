@@ -443,4 +443,66 @@ Do not automatically modify the child rows; reject the operation if it would vio
     - SELF JOIN
     - ON
     - USING
+
+1. INNER JOIN
+Definition:
+INNER JOIN returns only the rows that have matching values in both tables.
+
+2. LEFT JOIN
+Definition:
+LEFT JOIN returns all rows from the left table and the matching rows from the right table. If there is no match, the right-table columns contain NULL.
+
+3. RIGHT JOIN
+Definition:
+RIGHT JOIN returns all rows from the right table and matching rows from the left table. If there is no match, the left-table columns contain NULL.
+
+4. CROSS JOIN
+Definition:
+CROSS JOIN returns the Cartesian product of two tables. Every row of the first table is combined with every row of the second table.
+
+5. SELF JOIN
+Definition:
+A SELF JOIN is when a table is joined with itself. It is useful when rows in the same table have a relationship with each other.
+
+  ------------------------------------------BUILT IN FUNCTION--------------------------------------------------------------------------
+  Built-in Functions
+- String Functions
+  Function       	Purpose                         	Example
+UPPER()	      Converts to uppercase	       UPPER('hello') → HELLO
+LOWER()	      Converts to lowercase	       LOWER('HELLO') → hello
+LENGTH()	    Returns string length	       LENGTH('Vishal') → 6
+TRIM()	      Removes leading/trailing     spaces	TRIM(' SQL ') → SQL
+SUBSTRING()	  Extracts part of a string	   SUBSTRING('Database',1,4) → Data
+CONCAT()	    Combines strings	            CONCAT('Hello',' World')
   
+- Numeric functionS
+  
+   Function      	Purpose
+ABS()	           =Absolute value
+ROUND()         =	Rounds a number
+CEIL() /CEILING() =	Rounds upward
+FLOOR()	          =Rounds downward
+MOD()	            =Returns remainder
+POWER()           	=Calculates power
+  
+- Date and time functions
+    - CURDATE
+    - NOW
+    - YEAR
+    - MONTH
+    - DAY
+    - DATEDIFF
+    - DATE_FORMAT
+    - STR_TO_DATE
+- Conversion functions
+    - CAST
+    - CONVERT
+
+-Aggregate Functions
+Used to perform calculations on multiple rows.
+Function	   Purpose
+COUNT()	    Counts rows/values
+SUM()	      Calculates total
+AVG()	      Calculates average
+MAX()	      Finds maximum
+MIN()	      Finds minimum
